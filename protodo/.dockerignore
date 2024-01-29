@@ -1,0 +1,26 @@
+# Ignore build files and directories
+*.o
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore binary and executable files
+bin/
+dist/
+vendor/
+.idea/
+
+# Ignore system and temporary files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Ignore dependency management files
+/go.sum
+/go.mod
+
+# Ignore any local development or debugging files
+.vscode/
+.idea/
+

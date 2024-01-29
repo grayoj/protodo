@@ -1,0 +1,30 @@
+syntax = "proto3";
+package protodo;
+
+option go_package = "protodo/protodo";
+
+service TodoService {
+  rpc AddTodo(TodoRequest) returns (TodoResponse) {}
+  rpc DeleteTodo(DeleteTodoRequest) returns (DeleteTodoResponse) {}
+  rpc MarkTodoAsDone(MarkTodoAsDoneRequest) returns (MarkTodoAsDoneResponse) {}
+}
+
+message TodoRequest {
+  string id = 1;
+  string title = 2;
+  bool done = 3;
+}
+
+message TodoResponse {
+  string id = 1;
+  string title = 2;
+  bool done = 3;
+}
+
+message DeleteTodoRequest { string id = 1; }
+
+message DeleteTodoResponse {}
+
+message MarkTodoAsDoneRequest { string id = 1; }
+
+message MarkTodoAsDoneResponse {}
