@@ -8,4 +8,4 @@ I intend to sort out the client side issues. This is essentially a Todo list pro
 
 > It's entirely experimental and a WIP!
 
-Built using Go, gRPC, Vite, React (Typescript), [Bun]("http://bun.sh") + Tailwindcss. Minimalistic as possible, the goal.
+Built using Go, gRPC, Vite, Sqlite React (Typescript), [Bun]("http://bun.sh") + Tailwindcss. Minimalistic as possible, the goal.
